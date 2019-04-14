@@ -11,8 +11,7 @@ ARG ANDROID_SDK_TOOLS="4333796"
 
 ## Install packages
 RUN apk update -q \
-    && apk --update add --no-cache curl tar
-#    && apk --update add --no-cache lib32stdc++6 lib32z1
+    && apk --update add --no-cache wget unzip
 
 ## Install the Android SDK
 RUN cd /tmp \
