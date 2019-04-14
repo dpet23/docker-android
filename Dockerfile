@@ -24,9 +24,9 @@ RUN cd /tmp \
     && echo y | /opt/android-sdk-linux/tools/bin/sdkmanager "build-tools;${ANDROID_BUILD_TOOLS}" >/dev/null
 
 ## Set up the environment
-RUN export ANDROID_HOME=/opt/android-sdk-linux \
-    && export PATH=$PATH:/opt/android-sdk-linux/platform-tools/ \
-    && yes | /opt/android-sdk-linux/tools/bin/sdkmanager --licenses
+ENV ANDROID_HOME /opt/android-sdk-linux
+ENV PATH $PATH:/opt/android-sdk-linux/platform-tools/
+RUN yes | /opt/android-sdk-linux/tools/bin/sdkmanager --licenses
 
 # Clean up
 RUN rm -rv /tmp/*
