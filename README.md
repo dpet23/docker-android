@@ -18,7 +18,7 @@ See the individual branches for Dockerfiles.
 ### Docker Pull Command
 
 ```
-docker pull dpet23/docker-android
+docker pull dpet23/docker-android:<tag>
 ```
 
 [hub]: https://hub.docker.com/r/dpet23/docker-android
