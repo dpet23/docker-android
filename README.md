@@ -18,16 +18,10 @@ View on [Docker Hub][hub]
 
 ---
 
-### Build Info
-
-* Based on [Debian Linux](https://www.debian.org/)
-
----
-
 ### Docker Pull Command
 
 ```
-docker pull dpet23/docker-android
+docker pull dpet23/docker-android:<tag>
 ```
 
 ---
@@ -35,8 +29,8 @@ docker pull dpet23/docker-android
 ### Usage
 
 ```
-docker build -t dpet23/docker-android:debian .
-docker run -it --name docker-android dpet23/docker-android:debian /bin/bash
+docker build -t dpet23/docker-android:<tag> .
+docker run -it --name docker-android dpet23/docker-android:<tag> /bin/bash
 ```
 
 [hub]: https://hub.docker.com/r/dpet23/docker-android
